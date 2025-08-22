@@ -1,0 +1,16 @@
+.header{
+    @include space-between();
+    padding-top: 5.7rem;
+
+    &-right{
+        @include flex-row(2.5rem);
+        a {
+                @include roboto-text(700, 1.6rem, 100%, $white);
+             
+            }
+            button{
+                @include button($white,$orange,16px,15px 48px );
+            }
+    }
+   
+}

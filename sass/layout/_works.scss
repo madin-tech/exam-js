@@ -1,0 +1,62 @@
+.works{
+    width: 100%;
+    height: 140vh;
+    background-color: $orange;
+    padding-top: 10rem;
+
+    &-main{
+            @include flex-row(20rem);
+.left-side {
+        &-top {
+            @include flex-col(2.4rem);
+
+            h2 {
+                @include mont-text(700, 4rem, 2.2rem, $white);
+            }
+
+            .rectangle-white {
+                height: 2px;
+                width: 63px;
+            }
+        }
+
+        .boxes {
+            @include flex-col(6.5rem);
+            margin-top: 10rem;
+
+            .box {
+                @include flex-row-start(3.5rem);
+
+                .white {
+                    width: 109px;
+                    height: 109px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .text {
+                    @include flex-col(1.2rem);
+
+                    .first {
+                        @include mont-text(500, 2rem, 2.2rem, $white );
+                    }
+
+                    .second {
+                        @include mont-text(400, 1.6rem, 2.8rem, $white );
+                    }
+                }
+            }
+        }
+    }
+    .right-side{
+      img{
+        width: 432px;
+            height: 858px;
+      }
+    }
+    }
+  
+}
